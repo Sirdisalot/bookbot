@@ -5,6 +5,7 @@ def main():
     alphabet = character_count(text)
     char_list = [{"char":k, "num":v} for k, v in alphabet.items()]
     char_list.sort(reverse=True, key=sort_on)
+    
     print("--- Begin report of books/frankenstein.txt ---")
     print(f"{word_count} words found in the document")
     for i in char_list:
